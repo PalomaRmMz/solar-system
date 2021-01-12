@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 100vh;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.solar-system {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet, .trajectory {
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trajectory {
+    border: 1px solid #8f8f8f;
+    z-index: -99;
+}
+
+.planet.sun {
+    background-color: #ffa500;
+}
+
+.planet.mercury {
+    background-color: #b6bac5;
+    margin-left: 8em;
+    transform: scale(.09);
+    animation: orbit-mercury 1s infinite;
+}
+
+.trajectory.mercury {
+    width: 8em;
+    height: 8em;
+}
+
+.planet.venus {
+    background-color: #bf8639;
+    margin-left: 11em;
+    transform: scale(.14);
+}
+
+.trajectory.venus {
+    width: 11em;
+    height: 11em;
+}
+
+.planet.earth {
+    background-color: #0000a5;
+    margin-left: 14em;
+    transform: scale(.15);
+}
+
+.trajectory.earth {
+    width: 14em;
+    height: 14em;
+}
+
+.planet.mars {
+    background-color: #aa4200;
+    margin-left: 17em;
+    transform: scale(.11);
+}
+
+.trajectory.mars {
+    width: 17em;
+    height: 17em;
+}
+
+.planet.jupiter {
+    background-color: #e0ae6f;
+    margin-left: 21em;
+    transform: scale(.44);
+}
+
+.trajectory.jupiter {
+    width: 21em;
+    height: 21em;
+}
+
+.planet.saturn {
+    background-color: #dfd3a9;
+    margin-left: 26em;
+    transform: scale(.34);
+}
+
+.trajectory.saturn {
+    width: 26em;
+    height: 26em;
+}
+
+.planet.uranus {
+    background-color: #82b3d1;
+    margin-left: 31em;
+    transform: scale(.21);
+}
+
+.trajectory.uranus {
+    width: 31em;
+    height: 31em;
+}
+
+.planet.neptune {
+    background-color: #77c2ec;
+    margin-left: 36em;
+    transform: scale(.20);
+}
+
+.trajectory.neptune {
+    width: 36em;
+    height: 36em;
+}
+
+.planet.pluto {
+    background-color: #7c6a5c;
+    margin-left: 40em;
+    transform: scale(.08);
+}
+
+.trajectory.pluto {
+    width: 40em;
+    height: 40em;
+}
