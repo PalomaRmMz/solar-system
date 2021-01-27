@@ -1,24 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
     background-color: #000000;
     margin: 0;
     padding: 0;
     height: 100vh;
     perspective: 500;
-    color: #ffffff;
     overflow: hidden;
+    color: #ffffff;
 }
 
 .container {
     height: 100%;
 }
 
+/* ====================================== p l a n e t    i n f o r m a t i o n ====================================== */
+
+.container-information {
+    font-size: 13px;
+    color: #afafaf;
+    text-align: justify;
+    font-family: 'Convergence', sans-serif !important;
+}
+
+h2, h3 {
+    margin: 0 0 -10px 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #d6d6d6;
+}
+
+.linea {
+    border-top: 2px solid yellow;
+    border-left: 2px solid yellow;
+    transform: skewX(-20deg);
+}
+
+.information-box {
+    border: 2px solid rgba(80, 80, 80, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 7px rgba(133, 133, 133, 0.377);
+    width: 250px;
+    background-color: #000000;
+    z-index: 99;
+    left: 280px;
+    top: -170px;
+}
+
+.linea, #information-sun, #information-mercury, #information-venus, #information-earth, #information-mars, #information-jupiter, #information-saturn, #information-uranus, #information-neptune {
+    display: none;
+    position: absolute;
+}
+
+/* -------------------------- i n f o r m a t i o n     h o v e r --------------------------*/
+
+/* ··········· s u n ··········· */
+
+.sun:hover #information-sun {
+    display: inline;
+}
+
+.sun:hover .linea {
+    display: inline;
+    width: 100px;
+    height: 80px;
+    left: 150px;
+    top: -45px;
+}
+
+/* ··········· m e r c u r y ··········· */
+
+.mercury:hover #information-mercury {
+    display: inline;
+}
+
+.mercury:hover .linea {
+    display: inline;
+    width: 100px;
+    height: 80px;
+    left: 150px;
+    top: -45px;
+}
+
+.sun:hover, .mercury:hover, .venus:hover, .earth:hover, .mars:hover, .jupiter:hover, .saturn:hover, .uranus:hover, .neptune {
+    cursor: pointer;
+    /* animation: orb-slide paused; */
+    /* animation: planet-slide paused; */
+}
+
+/* ====================================== s o l a r    s y s t e m ====================================== */
+
 .title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive !important;
     font-size: 40px;
     text-align: center;
     margin-top: 20px;
+    color: #ffffff !important;
 }
 
 .container-solar-system {
@@ -57,7 +134,9 @@ body {
     width: 150px;
     height: 150px;
     background: url(https://lh3.googleusercontent.com/ejWlulqQXV-7yT5g_j-g8ifx8VSmmCOetI6fb4-fcOh3vqhc6sZzItm823C9iNZUvfi5SAnEnDephT87i2tGE56xzjuIK39H-6Cn6HJMSgv5LDUT1YlyNYsag59oWApwsaaDMQdBEKaauTnEP48DWvM5G7Y0CB5eYaReG8XnbB7c1b9VLgMwStQkNsE6AjzHPasLjN8EsOYg8WGuTtKlw0Fc7VE3A8MWiu75LgIMe2vrfuq2mUEhLt5qjsBpLORV7i8-kRHVEKmQJyXJehzUiLRZrSKpHukoUl68L3CKyZEGtTOMmlwh06eRz077Ir0773du2W0Np4ZT9boMsFd5Pm59sp6zpHh3EFqLy-Lovu6113eZWHflAo42LU89VOlF5Gzr0C-O362smj-t7_vxPxEbtGF_XhJq2yoHACLtDXvl-DrYvIoFbCtFnzR0akSXv2Wv6bhYkYS25F37DplAl0CQoNZ5xCv1YE5K2_eX7uIhhJvn0XQvuvuM5I_s8__qexym5gakDyoxNjk6ITdJ4KJ3MKmAYl1Pm4fkCSlbydts2O_a17wURkRJ8LY6Li2R0mJUFjXzOa9bmc9Z6MbtASQXbMJgFdYDM-ADDrFwqveDgxzeVeCe1LnB1tpLy2veX2Ktz8k5q6fTGSTM6HgCWvo_bdVBKzkrNMg2uXulJu5Zg8o6zC0GvlKdb68=s580-no?authuser=0) center no-repeat;
+    box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.705);
     background-size: 143% !important;
+    transform: rotateX(-90deg) !important;
 }
 
 .mercury {
@@ -221,7 +300,7 @@ body {
     animation-duration: 60s;
 }
 
-@keyframes orb-slide {
+/* @keyframes orb-slide {
     from {
         transform: rotateZ(360deg);
     }
@@ -237,14 +316,14 @@ body {
     to {
         transform: rotateX(-90deg) rotateY(0deg);
     }
-}
+} */
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #303030;
-    font-family: 'Orbitron';
+    font-family: 'Orbitron' !important;
     word-spacing: 18px;
     letter-spacing: 9px;
     font-size: 10px;
