@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
     background-color: #000000;
     margin: 0;
     padding: 0;
     height: 100vh;
     perspective: 500;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center !important;
+    color: #ffffff;
+    font-size: 40px;
+    padding-top: 30px;
 }
 
 .solar-system {
@@ -16,6 +26,7 @@ body {
     align-items: center;
     transform-style: preserve-3d;
     transform: rotateX(75deg) rotate(0deg);
+    top: -70px;
 }
 
 /* ====================================== o r b i t / p l a n e t    s i z e    a n d    c o n f i g ====================================== */
