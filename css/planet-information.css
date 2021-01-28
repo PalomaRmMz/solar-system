@@ -1,0 +1,75 @@
+/* ====================================== p l a n e t    i n f o r m a t i o n ====================================== */
+
+.container-information {
+    font-size: 13px;
+    color: #afafaf;
+    text-align: justify;
+    font-family: 'Convergence', sans-serif !important;
+}
+
+h2, h3 {
+    margin: 0 0 -10px 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #d6d6d6;
+}
+
+.linea {
+    border-top: 2px solid yellow;
+    border-left: 2px solid yellow;
+    transform: skewX(-20deg);
+}
+
+.information-box {
+    border: 2px solid rgba(80, 80, 80, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 7px rgba(133, 133, 133, 0.377);
+    width: 250px;
+    background-color: #000000;
+    z-index: 99;
+    left: 280px;
+    top: -170px;
+}
+
+.linea, #information-sun, #information-mercury, #information-venus, #information-earth, #information-mars, #information-jupiter, #information-saturn, #information-uranus, #information-neptune {
+    display: none;
+    position: absolute;
+}
+
+/* -------------------------- i n f o r m a t i o n     h o v e r --------------------------*/
+
+/* ··········· s u n ··········· */
+
+.sun:hover #information-sun {
+    display: inline;
+}
+
+.sun:hover .linea {
+    display: inline;
+    width: 100px;
+    height: 80px;
+    left: 150px;
+    top: -45px;
+}
+
+/* ··········· m e r c u r y ··········· */
+
+.mercury:hover #information-mercury {
+    display: inline;
+}
+
+.mercury:hover .linea {
+    display: inline;
+    width: 100px;
+    height: 80px;
+    left: 150px;
+    top: -45px;
+}
+
+.sun:hover, .mercury:hover, .venus:hover, .earth:hover, .mars:hover, .jupiter:hover, .saturn:hover, .uranus:hover, .neptune {
+    cursor: pointer;
+    /* animation: orb-slide paused; */
+    /* animation: planet-slide paused; */
+}

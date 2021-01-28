@@ -1,0 +1,63 @@
+/* ====================================== k e y    f r a m e s ====================================== */
+
+/* -------------------------- a n i m a t i o n --------------------------*/
+
+.orbit-mercury, .orbit-venus, .orbit-earth, .orbit-mars, .orbit-jupiter, .orbit-saturn, .orbit-uranus, .orbit-neptune {
+    animation: orb-slide infinite linear;
+}
+
+.sun, .mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune, .orb-mercury, .orb-venus, .orb-earth, .orb-mars, .orb-jupiter, .orb-saturn, .orb-uranus, .orb-neptune {
+    animation: planet-slide infinite linear;
+}
+
+/* -------------------------- d u r a t i o n --------------------------*/
+
+.mercury, .orbit-mercury {
+    animation-duration: 6s;
+}
+
+.venus, .orbit-venus {
+    animation-duration: 5s;
+}
+
+.earth, .orbit-earth {
+    animation-duration: 10s;
+}
+
+.mars, .orbit-mars {
+    animation-duration: 20s;
+}
+
+.jupiter, .orbit-jupiter {
+    animation-duration: 30s;
+}
+
+.saturn, .orbit-saturn {
+    animation-duration: 40s;
+}
+
+.uranus, .orbit-uranus {
+    animation-duration: 50s;
+}
+
+.neptune, .orbit-neptune {
+    animation-duration: 60s;
+}
+
+@keyframes orb-slide {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes planet-slide {
+    from {
+        transform: rotateX(-90deg) rotateY(360deg);
+    }
+    to {
+        transform: rotateX(-90deg) rotateY(0deg);
+    }
+}
