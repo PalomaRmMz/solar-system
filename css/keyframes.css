@@ -13,7 +13,7 @@
 /* -------------------------- d u r a t i o n --------------------------*/
 
 .mercury, .orbit-mercury {
-    animation-duration: 6s;
+    animation-duration: 2s;
 }
 
 .venus, .orbit-venus {
