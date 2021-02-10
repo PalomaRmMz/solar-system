@@ -35,3 +35,15 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+footer a:hover {
+    text-shadow: 2px 2px 5px #969696;
+}
